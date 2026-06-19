@@ -18,13 +18,13 @@
 {% block titulo_pagina %}
 {% endblock %}
 
-{% block main %}
+{% block corpo %}
 <div class="container">
     <form name="idFrmCadastrarFabricantes" action="{% url 'fabricantes:cadastro' %}" method="post">
     {% csrf_token %}
         <div class="form-group">
             <label for="idNomeFabricantes" class="col-form-label">Nome do Fabricante</label>
-            <input class="form-control bg-dark text-light" type="text" id="idNomeFabricantes" name="nome"
+            <input class="form-control bg-light text-dark" type="text" id="idNomeFabricantes" name="nome"
                 placeholder="Informe o nome do fabricante" maxlength="70" required>
         </div>
 
@@ -35,3 +35,6 @@
     </form>
 </div>
 {% endblock %}
+
+ {% block footer %}
+ {% endblock %}
