@@ -1,8 +1,8 @@
 from django import forms
 
-class TipoatividadeForm(forms.Form):
-    descricao = forms.CharField(
+class FabricanteForm(forms.Form):
+    nome = forms.CharField(
         max_length=70,
         required=True,
-        help_text='Informe a descrição do tipo de atividade'
+        help_text='Informe o nome do fabricante'
     )
